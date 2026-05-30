@@ -1,0 +1,16 @@
+.card { background: white; border-radius: 12px; max-width: 420px;
+        width: 100%; box-shadow: 0 2px 12px rgba(0,0,0,0.15); overflow: hidden; }
+.card-header { background: #1565C0; color: white; padding: 16px 20px;
+               display: flex; align-items: center; gap: 12px; }
+.btn-back { background: none; border: none; color: white; font-size: 22px; cursor: pointer; }
+.titulo { font-size: 20px; font-weight: bold; }
+.form-body { padding: 24px 20px; display: flex; flex-direction: column; gap: 16px; }
+.campo { display: flex; flex-direction: column; gap: 6px; }
+.campo label { font-size: 14px; font-weight: 600; }
+.campo input, .campo textarea { border: 1px solid #ccc; border-radius: 6px;
+  padding: 10px 12px; font-size: 14px; font-family: inherit; resize: vertical; }
+.botones { display: flex; gap: 12px; }
+.btn-guardar { background: #388E3C; color: white; border: none; border-radius: 8px;
+               padding: 12px 28px; font-size: 15px; font-weight: bold; cursor: pointer; }
+.btn-cancelar { background: #e0e0e0; color: #333; border: none; border-radius: 8px;
+                padding: 12px 28px; font-size: 15px; font-weight: bold; cursor: pointer; }

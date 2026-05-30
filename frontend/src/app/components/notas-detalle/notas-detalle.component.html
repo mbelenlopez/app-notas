@@ -1,0 +1,18 @@
+<div class='card' *ngIf='nota'>
+  <div class='card-header'>
+    <button class='btn-back' (click)='volver()'>←</button>
+    <span class='titulo'>Detalle de Nota</span>
+  </div>
+  <div class='detalle-body'>
+    <h2>{{ nota.titulo }}</h2>
+    <p class='contenido'>{{ nota.contenido }}</p>
+    <hr />
+    <p class='fecha'>Fecha: {{ nota.fecha | date: 'dd/MM/yyyy' }}</p>
+    <div class='botones'>
+      <button class='btn-editar' (click)='editar()'>Editar</button>
+      <button class='btn-borrar' (click)='borrar()'>Borrar</button>
+      <button class='btn-volver' (click)='volver()'>Volver</button>
+    </div>
+  </div>
+</div>
+<div *ngIf='!nota' class='cargando'>Cargando...</div>

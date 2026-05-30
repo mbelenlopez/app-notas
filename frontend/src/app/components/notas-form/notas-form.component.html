@@ -1,0 +1,21 @@
+<div class='card'>
+  <div class='card-header'>
+    <button class='btn-back' (click)='cancelar()'>←</button>
+    <span class='titulo'>{{ esEdicion ? 'Editar Nota' : 'Nueva Nota' }}</span>
+  </div>
+  <div class='form-body'>
+    <div class='campo'>
+      <label>Titulo</label>
+      <input type='text' [(ngModel)]='nota.titulo' name='titulo' />
+    </div>
+    <div class='campo'>
+      <label>Contenido</label>
+      <textarea [(ngModel)]='nota.contenido' name='contenido'
+                placeholder='Escribe tu nota aqui...' rows='7'></textarea>
+    </div>
+    <div class='botones'>
+      <button class='btn-guardar' (click)='guardar()'>Guardar</button>
+      <button class='btn-cancelar' (click)='cancelar()'>Cancelar</button>
+    </div>
+  </div>
+</div>

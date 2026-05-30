@@ -1,0 +1,21 @@
+<div class='card'>
+  <div class='card-header'>
+    <span class='titulo'>Mis Notas</span>
+    <button class='btn-nueva' (click)='nuevaNota()'>+ Nueva Nota</button>
+  </div>
+
+  <div class='filter-bar'>
+    <input [(ngModel)]='filtro' placeholder='Buscar nota...' class='filter-input' />
+  </div>
+
+  <div class='lista'>
+    <div class='nota-item' *ngFor='let nota of notasFiltradas'
+         (click)='verDetalle(nota._id!)'>
+      <strong>{{ nota.titulo }}</strong>
+      <p>{{ nota.contenido }}</p>
+    </div>
+    <div class='sin-notas' *ngIf='notasFiltradas.length === 0'>
+      No se encontraron notas.
+    </div>
+  </div>
+</div>

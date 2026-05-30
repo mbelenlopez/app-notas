@@ -1,0 +1,19 @@
+.card { background: white; border-radius: 12px; max-width: 420px;
+        width: 100%; box-shadow: 0 2px 12px rgba(0,0,0,0.15); overflow: hidden; }
+.card-header { background: #1565C0; color: white; padding: 16px 20px;
+               display: flex; align-items: center; gap: 12px; }
+.btn-back { background: none; border: none; color: white; font-size: 22px; cursor: pointer; }
+.titulo { font-size: 20px; font-weight: bold; }
+.detalle-body { padding: 24px 20px; display: flex; flex-direction: column; gap: 14px; }
+.detalle-body h2 { font-size: 20px; margin: 0; }
+.contenido { font-size: 15px; color: #444; line-height: 1.5; margin: 0; }
+hr { border: none; border-top: 1px solid #e0e0e0; }
+.fecha { font-size: 14px; color: #777; margin: 0; }
+.botones { display: flex; gap: 10px; }
+.btn-editar { background: #1565C0; color: white; border: none; border-radius: 8px;
+              padding: 12px 22px; font-size: 15px; font-weight: bold; cursor: pointer; }
+.btn-borrar { background: #C62828; color: white; border: none; border-radius: 8px;
+              padding: 12px 22px; font-size: 15px; font-weight: bold; cursor: pointer; }
+.btn-volver { background: #9E9E9E; color: white; border: none; border-radius: 8px;
+              padding: 12px 22px; font-size: 15px; font-weight: bold; cursor: pointer; }
+.cargando { padding: 40px; text-align: center; color: #999; }
